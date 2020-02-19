@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width=device-width">
+    <title>Bookmain</title>
+    <style>
+        /* common source*/
+        body{font-size:10px;min-width:320px}
+        header{width:100%;background: #1e2f53;padding:10px 0 10px 0;display:inline-block}
+        header nav{_float:left}
+        header nav ul {_float:left;width:100%}
+        header nav ul li{float:left;color:#fff;text-align:left}
+        a{text-decoration: none;color:white;}
+        #content{width:100%}
+        #myVisual{width:100%;
+            background-color: rgba(255, 241, 243, 0);
+            background-size:cover;background-position: 0 50%}
+        #myVisual section{width:80%;margin:0 auto;position:relative;top:40%}
+        #myVisual section p{float:left;width:100%;text-align:center;color:#fff}
+        #myVisual ul{float:right; padding-right: 200px; font-size:15px; font-family:"KoPub돋움체 Medium";}
+        #myVisual span{font-family: "휴먼매직체"}
+        #webIntro{clear:both;float:left;width:100%;background: #373b41;padding:80px 0 80px 0}
+        .webIntroCenter{width:90%;margin:0 auto}
+        .blah{float:left;width:23%;height:50px;border:1px solid #fff;border-radius:10px}
+        .blah p{float:left;width:100%;text-align:center;color:#fff;margin-top:12px}
+
+        /* mobile web */
+        @media screen and (min-width:0px) and (max-width:600px){
+            #logo{float:left;width:100%;font-size:3em;color:#fff;text-align:center}
+            header nav{width:100%}
+            header nav ul li{float:left;width:16%;font-size:1em}
+            #myVisual{height:300px}
+            #myVisual section p{font-size:2em}
+            .blah{clear:both;float:left;width:100%;text-align:center}
+            .blah2{margin:10px 0px}
+        }
+
+        /* pc web */
+        @media screen and (min-width:601px){
+            #logo{font-size:3em;color:#fff;margin-left:5%;display:inline-block}
+            header nav{float:right;margin-top:10px}
+            header nav ul li{width:100px;font-size:1.3em}
+            #myVisual{height:400px}
+            #myVisual section p{font-size:4em}
+            .blah2{margin:0 14% 0}
+        }
+    </style>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#myVisual').bxSlider();
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+
+            var main = $('#myVisual').bxSlider({
+
+                mode: 'fade',
+
+                auto: true,	//자동으로 슬라이드
+
+                controls : true,	//좌우 화살표
+
+                autoControls: true,	//stop,play
+
+                pager:true,	//페이징
+
+                pause: 3000,
+
+                autoDelay: 0,
+
+                slideWidth: 800, //이미지 박스 크기설정
+
+                speed: 500,
+
+                stopAutoOnclick:true
+
+            });
+        });
+    </script>
+
+</head>
+<body>
+<header>
+    <h1 id = "logo"><a href = "bookmain.html" target="_self">HOME</a></h1>
+    <nav>
+        <ul>
+            <li><a href ="profile.html" target="_self">Profile</a></li>
+            <li><a href ="https://blog.naver.com/gw2988" target="_blank">Blog</a></li>
+            <li><a href ="Study.html" target="_self">Study</a></li>
+            <li><a href ="Photo.html" target="_self">Photo</a></li>
+            <li><a href ="https://github.com/choigyuwon" target="_blank">Github</a></li>
+        </ul>
+    </nav>
+</header>
+<div id = "content">
+    <div id = "myVisual">
+        <nav>
+        <table>
+            <tr>
+                <td>
+                    <img src="/yy/image/people.jpg" alt="people" width="250px" height="350px">
+                </td>
+                <td>
+                    <img src="/yy/image/a.jpg" alt="a" width="250px" height="350px">
+                </td>
+                <td>
+                    <img src="/yy/image/couple1.jpg" alt="couple1" width="250px" height="350px">
+                </td>
+                <td>
+                    <img src="/yy/image/couple2.jpg" alt="couple2" width="250px" height="350px">
+                </td>
+                <td>
+                    <img src="/yy/image/couple3.jpg" alt="couple3" width="250px" height="350px">
+                </td>
+                <td>
+                    <img src="/yy/image/couple4.jpg" alt="couple4" width="250px" height="350px">
+                </td>
+                <td>
+                    <img src="/yy/image/couple5.jpg" alt="couple4" width="250px" height="350px">
+                </td>
+                <td>
+                    <img src="/yy/image/couple6.jpg" alt="couple4" width="250px" height="350px">
+                </td>
+
+            </tr>
+        </table>
+        </nav>
+    </div>
+    <div id="webIntro">
+        <div class = "webIntroCenter">
+            <div class = "blah1 blah">
+                <p style="font-size: 13px"><b><a href="http://gwnu.ac.kr" target="_blank">Gangneung-Wonju National University</a></b><br>Enter</p>
+            </div>
+            <div class="blah2 blah">
+                <p style="font-size: 13px"><b><a href="https://mail.naver.com" target="_blank">Help</a></b><br>gw2988@naver.com</p>
+            </div>
+            <div class="blah3 blah">
+                <p style="font-size: 13px"><b>Chatting</b><br>Enter</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5e46e727a89cda5a188607bb/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>

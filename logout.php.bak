@@ -1,0 +1,12 @@
+<?php
+header("Content-Type: text/html; charset=UTF-8");
+$conn = new mysqli("localhost","root","1234","mydb");
+mysqli_query($conn,'SET NAMES utf8');
+$id = $_POST['id'];
+$pw = $_POST['pw'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$sql = "insert into member (id,pw,name,email) values('$id','$pw','$name','$email')";
+$res = $conn->query($sql);
+echo "<script>location.href='login.html';</script>";
+?>
