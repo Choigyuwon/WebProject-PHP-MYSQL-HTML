@@ -1,0 +1,15 @@
+.click-board-title{color:black;text-decoration:none;}
+.click-board-mod{color:blue;text-decoration:none;}
+.click-board-del{color:red;text-decoration:none;}
+.click-board-write{color:black; text-decoration:none;font-weight:bold;text-align:right;}
+.click-board-page{color:black; text-decoration:none;}
+.table-top{background-color:#a0a3c2;font-weight:bold;}
+.table-bordered{text-align:center;}
+.display{text-align:center;font-family:Aladin;font-size:50px;}
+.post{text-align:right;}
+.form-horizontal{border:2px solid black;position : center; top : 0; bottom: 0; margin : auto;}
+.btn-style{color:white; background-color:black;border: none;text-decoration: none; font-size:20px;}
+.form1{border: 1px solid #bcbcbc;position : center;margin : auto; background-color:#a0a3c2;}
+.form2{border: 1px solid #bcbcbc;position : center;margin : auto;}
+.form3{border: 0px solid #bcbcbc;position : center;margin : auto;}
+body{text-align:center;}
